@@ -1,0 +1,12 @@
+[package]
+name = "intl-svc-test-task"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+url = "2.5.3"
+
+[lints.rust]
+#unused = "allow"
+#dead_code = "allow"
+#unsafe_code = "forbid"
