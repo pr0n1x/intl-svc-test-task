@@ -142,6 +142,7 @@ pub mod queries {
 
 /// CQRS and Event Sourcing-based service implementation
 pub struct UrlShortenerService {
+    // dynamic dispatch allows us to change implementations with a configuration (file)
     storage: Box<dyn cqrs::store::EventStore<Stats>>,
     slug_generator: Box<dyn gen::SlugGenerator>,
 }
